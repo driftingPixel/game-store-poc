@@ -1,0 +1,19 @@
+
+version: '3.8'
+
+services:
+  database:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: game-store-dev-db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+  cache:
+    image: "redis"
+    ports: 
+      - "6379:6379"
+    command: redis-server --requirepass password
+    environment:
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL

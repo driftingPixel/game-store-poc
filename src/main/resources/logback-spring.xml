@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<charset>utf-8</charset>
+			<pattern>%d{HH:mm:ss.SSS} %-5level {%thread} [%logger{40}] [%X{playerId}] [%X{gameId}] : %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="rollingfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<immediateFlush>true</immediateFlush>
+		<file>rgs.log</file>
+
+		<encoder>
+			<charset>utf-8</charset>
+			<pattern>%date{ISO8601} %-5level {%thread} [%logger{40}] [%X{playerId}] [%X{gameId}] [%X{sessionId}] [%X{saxAuthToken}] [%X{gameCycleId}]%n[%X{finalizeSession}] %replace(%msg){'[\r\n]+', ''}%n%n</pattern>
+		</encoder>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>rgs-%i.log</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>5</maxIndex>
+		</rollingPolicy>
+
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>100MB</maxFileSize>
+		</triggeringPolicy>
+	</appender>
+
+
+	<root level="info">
+		<appender-ref ref="stdout"/>
+	</root>
+
+	<logger name="game-store" level="debug">
+		<appender-ref ref="rollingfile"/>
+	</logger>
+
+</configuration>
