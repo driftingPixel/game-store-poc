@@ -2,25 +2,33 @@ spring:
   application:
     name: Game Store POC
   datasource:
-    username: username
-    password: passord
+    username: user
+    password: password
     url: jdbc:postgresql://localhost:5432/game-store-dev-db
     driver-class-name: org.postgresql.Driver
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+  # sql:
+  #   init:
+  #     mode: ALWAYS
+  #     platform: postgres
   jpa:
     show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: auto
-  liquibase:
-    change-log: classpath:db/changelog.xml
-    enabled: true
-    contexts: local
-    parameters:
-      data-file-prefix: local
-      catalog-name: integratordata
-  redis:
-    database: 0
-    host: localhost
-    port: 6379
-    password: password
-    timeout: 60000
+      ddl-auto: update
+    # database-platform: org.hibernate.dialect.PostgreSQLDialect
+  # liquibase:
+  #   change-log: classpath:db/changelog/changelog.xml
+  #   enabled: true
+  #   contexts: local
+  #   parameters:
+  #     data-file-prefix: local
+  #     catalog-name: game-store-dev-db
+  # redis:
+  #   database: 0
+  #   host: localhost
+  #   port: 6379
+  #   password: password
+  #   timeout: 60000

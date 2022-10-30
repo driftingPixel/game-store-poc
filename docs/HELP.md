@@ -1,11 +1,13 @@
 # Read Me First
-The following was discovered as part of building this project:
 
-* The original package name 'games.driftingpixel.game-store' is invalid and this project uses 'games.driftingpixel.gamestore' instead.
+Main README file for this project is available in main folder: [README.md](../README.md)
 
-# Getting Started
+## Getting Started
+
+Useful links in this paragraph
 
 ### Reference Documentation
+
 For further reference, please consider the following sections:
 
 * [Official Gradle documentation](https://docs.gradle.org)
@@ -15,13 +17,14 @@ For further reference, please consider the following sections:
 * [Spring Data Redis (Access+Driver)](https://docs.spring.io/spring-boot/docs/2.7.5/reference/htmlsingle/#data.nosql.redis)
 
 ### Guides
+
 The following guides illustrate how to use some features concretely:
 
 * [Messaging with Redis](https://spring.io/guides/gs/messaging-redis/)
 * [Messaging with Redis](https://spring.io/guides/gs/messaging-redis/)
 
 ### Additional Links
+
 These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
-
