@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - preConditions:
+          -
+            not:
+              -
+                tableExists:
+                  tableName: images
+  - changeSet:
+        id: create-image-entity
+        author: driftingPixel
+        changes:  
+          -  createTable:
+              tableName: images
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: id
+                    type: bigint
+                    autoIncrement:  true  
+                    constraints:  
+                      primaryKey:  true  
+                      nullable:  false  
+                - column:
+                    name: title
+                    type: varchar(48)
+                - column:
+                    name: url
+                    type: varchar(256)
+                - column:
+                    name: created
+                    type: date
+                - column:
+                    name: last_update
+                    type: date
+    
+              

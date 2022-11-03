@@ -1,0 +1,34 @@
+databaseChangeLog:
+   - preConditions:
+          -
+            not:
+              -
+                tableExists:
+                  tableName: categories
+   - changeSet:
+        id: create-category-entity
+        author: driftingPixel
+        changes:  
+          -  createTable:
+              tableName: categories
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: id
+                    type: bigint
+                    autoIncrement:  true  
+                    constraints:  
+                      primaryKey:  true  
+                      nullable:  false
+                - column:
+                    name: name
+                    type: varchar(36)
+                - column:
+                    name: summary
+                    type: varchar(512)
+                - column:
+                    name: slug
+                    type: varchar(36)
+    
+              

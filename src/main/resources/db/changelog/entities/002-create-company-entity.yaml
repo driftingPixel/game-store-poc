@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - preConditions:
+          -
+            not:
+              -
+                tableExists:
+                  tableName: companies
+  - changeSet:
+        id: create-company-entity
+        author: driftingPixel
+        changes:  
+          -  createTable:
+              tableName: companies
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: id
+                    type: bigint
+                    autoIncrement:  true  
+                    constraints:  
+                      primaryKey:  true  
+                      nullable:  false
+                - column:
+                    name: name
+                    type: varchar(36)
+                - column:
+                    name: summary
+                    type: varchar(4096)
+                - column:
+                    name: slug
+                    type: varchar(36)
+                - column:
+                    name: url
+                    type: varchar(256)
+    
+              

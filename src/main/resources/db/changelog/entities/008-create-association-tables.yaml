@@ -1,0 +1,66 @@
+databaseChangeLog:
+  # - preConditions:
+  #         -  tableExists:
+  #              tableName: games
+  #         -  tableExists:
+  #              tableName: companies
+  #         -  tableExists:
+  #              tableName: categories
+  - changeSet:
+        id: create-association-tables
+        author: driftingPixel
+        changes:  
+          -  createTable:
+              tableName: games_companies
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: game_id
+                    type: bigint
+                    constraints:  
+                      foreignKeyName: fk_game_companies_game_id  
+                      nullable:  false  
+                - column:
+                    name: companies_id
+                    type: bigint
+                    constraints:  
+                      foreignKeyName: fk_game_companies_company_id  
+                      nullable:  false  
+          -  createTable:
+              tableName: games_categories
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: game_id
+                    type: bigint
+                    constraints:  
+                      foreignKeyName: fk_game_categories_game_id  
+                      nullable:  false  
+                - column:
+                    name: category_id
+                    type: bigint
+                    constraints:  
+                      foreignKeyName: fk_game_categories_category_id  
+                      nullable:  false
+          -  createTable:
+              tableName: galleries_image_urls
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: gallery_id
+                    type: bigint
+                    constraints:  
+                      foreignKeyName: fk_galleries_image_gallery_id  
+                      nullable:  false  
+                - column:
+                    name: image_urls_id
+                    type: bigint
+                    constraints:  
+                      foreignKeyName: fk_galleries_image_image_urls_id  
+                      nullable:  false    
+    
+    
+              

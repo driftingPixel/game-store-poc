@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Images")
+@Table(name = "images")
 public class Image {
 
   @Id
@@ -25,6 +25,6 @@ public class Image {
 
   private Date created;
 
-  private Date updated;
+  private Date lastUpdate;
   
 }

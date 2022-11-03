@@ -18,5 +18,7 @@ public class Company extends BaseDbModel {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   protected Long id;
+
+  private String url;
   
 }

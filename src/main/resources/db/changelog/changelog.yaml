@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - 
+    includeAll:
+        path: ./entities
+        relativeToChangelogFile: true
+  -
+    includeAll:
+      path: ./data
+      relativeToChangelogFile: true

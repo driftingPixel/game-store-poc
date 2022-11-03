@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - preConditions:
+          -
+            not:
+              -
+                tableExists:
+                  tableName: user
+  - changeSet:
+        id: create-user-entity
+        author: driftingPixel
+        changes:  
+          -  createTable:
+              tableName: user
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: id
+                    type: bigint
+                    autoIncrement:  true  
+                    constraints:  
+                      primaryKey:  true  
+                      nullable:  false  
+                - column:
+                    name: name
+                    type: varchar(64)
+                - column:
+                    name: login
+                    type: varchar(64)
+                - column:
+                    name: password_hash
+                    type: varchar(40)
+                - column:
+                    name: created
+                    type: date
+                - column:
+                    name: last_update
+                    type: date
+    
+              

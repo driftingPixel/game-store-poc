@@ -1,0 +1,54 @@
+databaseChangeLog:
+  - preConditions:
+          -
+            not:
+              -
+                tableExists:
+                  tableName: games
+  - changeSet:
+        id: create-game-entity
+        author: driftingPixel
+        changes:  
+          -  createTable:
+              tableName: games
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: id
+                    type: bigint
+                    autoIncrement:  true  
+                    constraints:  
+                      primaryKey:  true  
+                      nullable:  false  
+                - column:
+                    name: name
+                    type: varchar(80)
+                - column:
+                    name: summary
+                    type: varchar(4096)
+                - column:
+                    name: slug
+                    type: varchar(64)
+                - column:
+                    name: first_release_date
+                    type: date
+                - column:
+                    name: gallery
+                    type: bigint
+                    constraints:
+                      nullable: true
+                      foreignKeyName: fk_abc_account
+                      references: galleries(id)
+                - column:
+                    name: created
+                    type: date
+                - column:
+                    name: last_update
+                    type: date
+                - column:
+                    name: igb_url
+                    type: varchar(200) 
+
+    
+              

@@ -1,0 +1,19 @@
+databaseChangeLog:
+  # - preConditions:
+  #         -
+  #           tableExists:
+  #             tableName: companies
+  - changeSet:
+      id: initialization-test-company-entity
+      author: driftingPixel
+      loadUpdateData:
+        catalogName: ${catalog-name}
+        encoding: UTF-8
+        file: ./data/csv/${data-file-prefix}-company-entity.csv
+        relativeToChangelogFile: true
+        onlyUpdate: false
+        primaryKey: id
+        quotchar: '`'
+        schemaName: public
+        separator: ','
+        tableName: companies

@@ -24,7 +24,8 @@ public class Game extends BaseDbModel {
   @GeneratedValue(strategy = GenerationType.AUTO)
   protected Long id;
 
-  private String category;
+  @OneToMany
+  private List<Category> categories;
 
   /**
    * List of platforms, where game is available
@@ -43,4 +44,7 @@ public class Game extends BaseDbModel {
   @OneToOne
   private Gallery gallery;
   private String igbUrl;
+  
+  private Date created;
+  private Date lastUpdate;
 }

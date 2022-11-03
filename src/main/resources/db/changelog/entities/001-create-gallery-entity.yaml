@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - preConditions:
+          -
+            not:
+              -
+                tableExists:
+                  tableName: galleries
+  - changeSet:
+        id: create-gallery-entity
+        author: driftingPixel
+        changes:  
+          -  createTable:
+              tableName: galleries
+              schemaName: public
+              catalog-name: ${catalog-name}
+              columns:
+                - column:
+                    name: id
+                    type: bigint
+                    autoIncrement:  true  
+                    constraints:  
+                      primaryKey:  true  
+                      nullable:  false
+                - column:
+                    name: name
+                    type: varchar(36)
+
+
+    
+  

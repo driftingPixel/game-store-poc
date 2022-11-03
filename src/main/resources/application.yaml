@@ -17,15 +17,15 @@ spring:
     show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     # database-platform: org.hibernate.dialect.PostgreSQLDialect
-  # liquibase:
-  #   change-log: classpath:db/changelog/changelog.xml
-  #   enabled: true
-  #   contexts: local
-  #   parameters:
-  #     data-file-prefix: local
-  #     catalog-name: game-store-dev-db
+  liquibase:
+    change-log: classpath:db/changelog/changelog.yaml
+    enabled: true
+    contexts: local
+    parameters:
+      data-file-prefix: local
+      catalog-name: game-store-dev-db
   # redis:
   #   database: 0
   #   host: localhost
