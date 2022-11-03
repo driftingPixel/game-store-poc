@@ -1,0 +1,19 @@
+databaseChangeLog:
+  # - preConditions:
+  #         -
+  #           tableExists:
+  #             tableName: categories
+  - changeSet:
+      id: initialization-test-category-entity
+      author: driftingPixel
+      loadUpdateData:
+        catalogName: ${catalog-name}
+        encoding: UTF-8
+        file: ./data/csv/${data-file-prefix}-category-entity.csv
+        relativeToChangelogFile: true
+        onlyUpdate: false
+        primaryKey: id
+        quotchar: '`'
+        schemaName: public
+        separator: ','
+        tableName: categories

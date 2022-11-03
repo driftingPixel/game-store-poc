@@ -1,12 +1,12 @@
 `id`,`name`,`summary`,`slug`,`url`
 `1`,`Electronic Arts`,`Electronic Arts is a leading global interactive entertainment software company. EA delivers games, content and online services for Internet-connected consoles, personal computers, mobile phones and tablets.`,`electronic-arts`, `https://www.igdb.com/companies/electronic-arts`
-`9`,`Lucasfilm Games`,`Lucasfilm Games was founded in May 1982 by George Lucas as Lucasfilm Games, the video game development group of his film company, Lucasfilm. Lucas initially served as the company's chairman. 
+`2`,`Lucasfilm Games`,`Lucasfilm Games was founded in May 1982 by George Lucas as Lucasfilm Games, the video game development group of his film company, Lucasfilm. Lucas initially served as the company's chairman. 
  
 During a 1990 reorganization of Lucas companies, the Lucasfilm Games division was renamed LucasArts.`,`lucasfilm-games`, `https://www.igdb.com/companies/lucasfilm-games`
-`2`,`BioWare`,`BioWare is a Canadian video game developer based in Edmonton, Alberta. It was founded by newly graduated medical doctors Ray Muzyka, Greg Zeschuk and Augustine Yip, alongside Trent Oster, Brent Oster, and Marcel Zeschuk. BioWare specializes in role-playing video games, and achieved recognition for developing highly praised and successful licensed franchises: Baldur's Gate, Neverwinter Nights, and Star Wars: Knights of the Old Republic. They proceeded to make several other successful games based on original intellectual property: Jade Empire, the Mass Effect series and the Dragon Age series.`,`bioware`, `https://www.igdb.com/companies/bioware`
-`8`,`2K Games`,`2K Games is a video game publisher managing some of the most creative, respected and premium brands in games today. The studio develops and publishes games for PC, console and mobile platforms.`,`2k-games`, `https://www.igdb.com/companies/2k-games`
-`3`,`Looking Glass Studios`,null,`looking-glass-studios`, `https://www.igdb.com/companies/looking-glass-studios`
-`7`,`Visceral Games`,`Formerly known as EA Redwood Shores. 
+`3`,`BioWare`,`BioWare is a Canadian video game developer based in Edmonton, Alberta. It was founded by newly graduated medical doctors Ray Muzyka, Greg Zeschuk and Augustine Yip, alongside Trent Oster, Brent Oster, and Marcel Zeschuk. BioWare specializes in role-playing video games, and achieved recognition for developing highly praised and successful licensed franchises: Baldur's Gate, Neverwinter Nights, and Star Wars: Knights of the Old Republic. They proceeded to make several other successful games based on original intellectual property: Jade Empire, the Mass Effect series and the Dragon Age series.`,`bioware`, `https://www.igdb.com/companies/bioware`
+`4`,`2K Games`,`2K Games is a video game publisher managing some of the most creative, respected and premium brands in games today. The studio develops and publishes games for PC, console and mobile platforms.`,`2k-games`, `https://www.igdb.com/companies/2k-games`
+`5`,`Looking Glass Studios`,null,`looking-glass-studios`, `https://www.igdb.com/companies/looking-glass-studios`
+`6`,`Visceral Games`,`Formerly known as EA Redwood Shores. 
  
 After the success of Dead Space, the studio was able to move from an internal development studio of EA Games to a separate subsidiary with a focus on third-person action games. 
  
@@ -20,8 +20,8 @@ Visceral Games closed in October 2017.`,`visceral-games`, `https://www.igdb.com/
 Creating games is our passion. Founded in 2002, we joined SEGA Networks’ family of studios in early 2015. We bring years of development expertise to our original projects, Shoot Many Robots, Marvel Puzzle Quest, and Puzzle &amp; Glory. 
 
 Based in Cambridge, MA, our developers have worked with partners around the globe on titles such as Bioshock, Borderlands, and Mass Effect.`,`demiurge-studios`, `https://www.igdb.com/companies/demiurge-studios`
-`15`,`2K Marin`,null,`2k-marin`, `https://www.igdb.com/companies/2k-marin`
-`5`,`Interplay Entertainment`,`Founded in 1983, Interplay Entertainment is a developer, publisher and licensor of video game software headquartered in Southern California.
+`7`,`2K Marin`,null,`2k-marin`, `https://www.igdb.com/companies/2k-marin`
+`8`,`Interplay Entertainment`,`Founded in 1983, Interplay Entertainment is a developer, publisher and licensor of video game software headquartered in Southern California.
 
 Interplay originally published successful titles in the Role-Playing Game (RPG) genre, including hits like Fallout® 1 &amp; 2, Planescape: Torment and the Baldur's Gate series.
 
@@ -30,13 +30,13 @@ We have produced and licensed titles for many of the most popular interactive en
 Our portfolio of well recognized Intellectual Properties includes Battlechess, Clayfighter, Dark Alliance, Descent, Earthworm Jim, Freespace, Giants, Messiah, MDK, Run Like Hell and Sacrifice amongst others.
 
 We seek to publish or license out interactive entertainment software titles that are, or have the potential to become, franchise software titles that can be leveraged across several releases and/or platforms, and have published or licensed many such successful franchise titles to date.`,`interplay-entertainment`, `https://www.igdb.com/companies/interplay-entertainment`
-`38`,`Ubisoft Montreal`,`Ubisoft Montréal is Ubisoft's largest in-house development studio, as well as the largest development studio worldwide with more than 4,000 employees. Founded in Montréal, Québec, the studio started with only 50 employees. 25 of these came from Ubisoft's headquarters in France, while the rest were new recruits. While the company originally focused their work on licensed family-friendly titles, the team achieved breakthrough success through the release of two titles: Prince of Persia: The Sands of Time and Tom Clancy's Splinter Cell.`,`ubisoft-montreal`, `https://www.igdb.com/companies/ubisoft-montreal`
+`9`,`Ubisoft Montreal`,`Ubisoft Montréal is Ubisoft's largest in-house development studio, as well as the largest development studio worldwide with more than 4,000 employees. Founded in Montréal, Québec, the studio started with only 50 employees. 25 of these came from Ubisoft's headquarters in France, while the rest were new recruits. While the company originally focused their work on licensed family-friendly titles, the team achieved breakthrough success through the release of two titles: Prince of Persia: The Sands of Time and Tom Clancy's Splinter Cell.`,`ubisoft-montreal`, `https://www.igdb.com/companies/ubisoft-montreal`
 `10`,`LucasArts`,`With titles on consoles, PCs, and mobile devices, LucasArts endeavors to deliver experiences — whether it’s piloting a snowspeeder in the Battle of Hoth or slinging Jedi Birds at Sith Pigs — that are not possible in any other medium, and dazzle fans with stunning graphics, engaging storytelling, and fun gameplay. 
  
 Continually pushing the art form forward, LucasArts leverages the global skills, technology, and resources of its family of companies, in addition to strategic partnerships, to further the boundaries of gaming.`,`lucasarts`, `https://www.igdb.com/companies/lucasarts`
-`4`,`Eidos Interactive`,`Now called Square Enix Europe. The company was founded as Domark in 1984 by Mark Strachan and Dominic Wheatley. In 1995, the company was acquired by Eidos and was merged with two other studios and renamed Eidos Interactive the following year. Eidos was in turn acquired by SCi in 2005, and Eidos Interactive was sold to Square Enix in 2009. On 9 November 2009, Square Enix completed the merger of its existing European branch with Eidos Interactive, renaming the resulting company Square Enix Europe. With the consolidation of Square Enix's Western divisions around 2015, Square Enix Ltd. and Square Enix Inc. are collectively referred to as Square Enix West.`,`eidos-interactive`, `https://www.igdb.com/companies/eidos-interactive`
-`11`,`EA Redwood Shores`,`EA’s corporate headquarters is based in Redwood Shores, California. It is home to two major EA development studios; Maxis, the developers of The Sims franchise and Visceral Games, the developers of the sci-fi horror franchise Dead Space. EA’s corporate headquarters is also the center of global publishing, marketing, HR and facilities initiatives.`,`ea-redwood-shores`, `https://www.igdb.com/companies/ea-redwood-shores`
-`17`,`Digital Extremes`,`Founded in 1993 by James Schmalz, Digital Extremes Ltd. proudly ranks as one of the world's top development studios in the interactive entertainment industry.
+`11`,`Eidos Interactive`,`Now called Square Enix Europe. The company was founded as Domark in 1984 by Mark Strachan and Dominic Wheatley. In 1995, the company was acquired by Eidos and was merged with two other studios and renamed Eidos Interactive the following year. Eidos was in turn acquired by SCi in 2005, and Eidos Interactive was sold to Square Enix in 2009. On 9 November 2009, Square Enix completed the merger of its existing European branch with Eidos Interactive, renaming the resulting company Square Enix Europe. With the consolidation of Square Enix's Western divisions around 2015, Square Enix Ltd. and Square Enix Inc. are collectively referred to as Square Enix West.`,`eidos-interactive`, `https://www.igdb.com/companies/eidos-interactive`
+`12`,`EA Redwood Shores`,`EA’s corporate headquarters is based in Redwood Shores, California. It is home to two major EA development studios; Maxis, the developers of The Sims franchise and Visceral Games, the developers of the sci-fi horror franchise Dead Space. EA’s corporate headquarters is also the center of global publishing, marketing, HR and facilities initiatives.`,`ea-redwood-shores`, `https://www.igdb.com/companies/ea-redwood-shores`
+`13`,`Digital Extremes`,`Founded in 1993 by James Schmalz, Digital Extremes Ltd. proudly ranks as one of the world's top development studios in the interactive entertainment industry.
 Headquartered in London Ontario, Canada’s 10th largest city, Digital Extremes got its foothold early on in the game industry during the shareware craze of the early 90s. Epic Pinball was a ten month project written entirely in assembly language by Schmalz that went on to become one of the most successful shareware games ever made, trailing only behind such industry greats as Duke3D, Doom and Wolfenstein 3D. Sequels such as Silverball and Extreme Pinball were released shortly thereafter and together they helped fund the creation of what would become one of the industry’s blockbuster franchises, Epic Games’ Unreal®.
 
 Beginning in 1994, Digital Extremes partnered with Epic Games (at that time, its shareware publisher) and co-created Unreal and its counterpart Unreal Tournament. Both games set new standards for first-person action games and broke new ground in online multiplayer gaming. Tremendously rich graphics, fine-tuned gameplay, frenetic action and high quality production value are descriptions that have become synonymous with any Unreal branded game. To date, the award-winning Unreal franchise, including Unreal, Unreal Tournament and Unreal Championship has sold more than 12 million units worldwide across the PC, PlayStation®2, Xbox™ and Dreamcast™ platforms.
@@ -53,7 +53,7 @@ Following its purchase by EA, Bullfrog continued to work in its original offices
 A few compilations of older games that Bullfrog worked on have been published since, but to all intents and purposes the brand has been dead since the move to Chertsey in 2000.
 
 Many Bullfrog developers left to found their own studios and these became Intrepid Computer Entertainment Ltd., Big Blue Box Studios Ltd. and Lionhead Studios. The latter eventually absorbed the first two and became the only studio to carry on the Bullfrog legacy.`,`bullfrog-productions`, `https://www.igdb.com/companies/bullfrog-productions`
-`6`,`Lionhead Studios`,`Lionhead Studios was born in 1996 in the quaint, English town of Guildford with the bold aspiration to make ground-breaking, genre-defining games.
+`15`,`Lionhead Studios`,`Lionhead Studios was born in 1996 in the quaint, English town of Guildford with the bold aspiration to make ground-breaking, genre-defining games.
 
 What began with a mere handful of designers has grown to a team of over a hundred, and now Lionhead is home to some of the most creative and talented industry professionals around. With such talent, we're always aiming to deliver the best adventures and stories for you to experience.
 
@@ -67,23 +67,23 @@ It was shut down along with the cancellation of Borderlands Online, the China ex
  
 2K Hangzhou studio was closed along with 2K China. 
 2K Chengdu was retained and continues as a QA company for 2K games.`,`2k-china`, `https://www.igdb.com/companies/2k-china`
-`19`,`Arkane Studios`,null,`arkane-studios`, `https://www.igdb.com/companies/arkane-studios`
-`23`,`Feral Interactive`,`We are a publishing company set up in 1996 with a mission to bring great games to the Mac. Since then, we have not only established ourselves as a world-leading publisher of Mac games but of Linux games as well. 
+`16`,`Arkane Studios`,null,`arkane-studios`, `https://www.igdb.com/companies/arkane-studios`
+`17`,`Feral Interactive`,`We are a publishing company set up in 1996 with a mission to bring great games to the Mac. Since then, we have not only established ourselves as a world-leading publisher of Mac games but of Linux games as well. 
  
 We enjoy close relationships with developers and publishers such as 2K, SEGA, Square Enix, TT Games, Codemasters, Creative Assembly, Warner Bros. Interactive Entertainment and Io-Interactive. 
  
 We’re based in London, England, but we deliver our titles to gamers all over the world thanks to the marvel that is digital download. 
  
 One of our key aims is to have fun; we work with people we like, publish games that we enjoy and try not to be too corporate with our website. We hope you like our taste, but if there’s a game you’d like to see on the Mac or on Linux we’d love to hear from you.`,`feral-interactive`, `https://www.igdb.com/companies/feral-interactive`
-`21`,`Irrational Games`,`Irrational Games is the renamed version of the studio 2K Boston to respect the studio's legacy.`,`irrational-games`, `https://www.igdb.com/companies/irrational-games`
-`32`,`Sierra On-Line`,null,`sierra-on-line`, `https://www.igdb.com/companies/sierra-on-line`
+`18`,`Irrational Games`,`Irrational Games is the renamed version of the studio 2K Boston to respect the studio's legacy.`,`irrational-games`, `https://www.igdb.com/companies/irrational-games`
+`19`,`Sierra On-Line`,null,`sierra-on-line`, `https://www.igdb.com/companies/sierra-on-line`
 `20`,`Darkside Game Studios`,null,`darkside-game-studios`, `https://www.igdb.com/companies/darkside-game-studios`
-`12`,`Black Isle Studios`,null,`black-isle-studios`, `https://www.igdb.com/companies/black-isle-studios`
-`26`,`Square Enix`,`Square Enix develops, publishes, distributes and licenses Square Enix, Eidos and Taito branded entertainment content in Europe and other PAL territories as part of the Square Enix group of companies. Square Enix also has a global network of leading development studios such as Crystal Dynamics and Eidos Montréal. 
+`21`,`Black Isle Studios`,null,`black-isle-studios`, `https://www.igdb.com/companies/black-isle-studios`
+`22`,`Square Enix`,`Square Enix develops, publishes, distributes and licenses Square Enix, Eidos and Taito branded entertainment content in Europe and other PAL territories as part of the Square Enix group of companies. Square Enix also has a global network of leading development studios such as Crystal Dynamics and Eidos Montréal. 
  
 The Square Enix group of companies boasts a valuable portfolio of intellectual property including: Final Fantasy, which has sold over 130 million units worldwide; Dragon Quest, which has sold over 71 million units worldwide; Tomb Raider, which has sold over 58 million units worldwide; and the legendary Space Invaders.`,`square-enix`, `https://www.igdb.com/companies/square-enix`
-`28`,`(Archive) Bethesda Softworks LLC`,`This is a duplicate company and should not be used. 
+`23`,`(Archive) Bethesda Softworks LLC`,`This is a duplicate company and should not be used. 
 Will be archived at a later time.`,`archive-bethesda-softworks-llc`, `https://www.igdb.com/companies/archive-bethesda-softworks-llc`
-`29`,`Rockstar Games`,null,`rockstar-games`, `https://www.igdb.com/companies/rockstar-games`
-`30`,`Team Bondi`,null,`team-bondi`, `https://www.igdb.com/companies/team-bondi`
-`24`,`Sierra Entertainment`,`Sierra Entertainment, Inc. (formerly On-Line Systems and Sierra On-Line, Inc.) was an American video game developer and publisher. The company was founded in 1979 by Ken and Roberta Williams, and known for pioneering the graphic adventure game genre including the first such game, Roberta's Mystery House. The company is known for its graphical adventure game series King's Quest, Space Quest, Police Quest, Gabriel Knight, Leisure Suit Larry, and Quest for Glory.`,`sierra-entertainment`, `https://www.igdb.com/companies/sierra-entertainment`
+`24`,`Rockstar Games`,null,`rockstar-games`, `https://www.igdb.com/companies/rockstar-games`
+`25`,`Team Bondi`,null,`team-bondi`, `https://www.igdb.com/companies/team-bondi`
+`26`,`Sierra Entertainment`,`Sierra Entertainment, Inc. (formerly On-Line Systems and Sierra On-Line, Inc.) was an American video game developer and publisher. The company was founded in 1979 by Ken and Roberta Williams, and known for pioneering the graphic adventure game genre including the first such game, Roberta's Mystery House. The company is known for its graphical adventure game series King's Quest, Space Quest, Police Quest, Gabriel Knight, Leisure Suit Larry, and Quest for Glory.`,`sierra-entertainment`, `https://www.igdb.com/companies/sierra-entertainment`

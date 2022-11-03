@@ -1,0 +1,19 @@
+databaseChangeLog:
+  # - preConditions:
+  #         -
+  #           tableExists:
+  #             tableName: games_categories
+  - changeSet:
+      id: initialization-test-category-game-entity
+      author: driftingPixel
+      loadUpdateData:
+        catalogName: ${catalog-name}
+        encoding: UTF-8
+        file: ./data/csv/${data-file-prefix}-category-game-entity.csv
+        relativeToChangelogFile: true
+        onlyUpdate: false
+        primaryKey: game_id,categories_id
+        quotchar: '`'
+        schemaName: public
+        separator: ','
+        tableName: games_categories

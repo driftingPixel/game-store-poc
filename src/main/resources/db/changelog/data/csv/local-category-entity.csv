@@ -1,0 +1,10 @@
+`id`,`name`,`summary`,`slug`
+`1`,`Sandbox`,`Sandbox`,`sandbox`
+`2`,`Real-time strategy (RTS)`,`Real-time strategy (RTS)`,`real_time_strategy`
+`3`,`First Person Shooter`,`First Person Shooter`,`first_person_shooter`
+`4`,`Third Person Shooter`,`Third Person Shooter`,`third_person_shooter`
+`5`,`Multiplayer online battle arena`,`Multiplayer online battle arena`,`multiplayer_battle_arena`
+`6`,`Role-playing`,`Role-playing`,`rpg`
+`7`,`Simulation and sports`,`Simulation and sports`,`simulations_and_sports`
+`8`,`Puzzle`,`Puzzle`,`puzzle`
+`9`,`Action-adventure`,`Action-adventure`,`action_adventure`

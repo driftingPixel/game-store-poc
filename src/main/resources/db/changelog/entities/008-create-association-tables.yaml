@@ -39,7 +39,7 @@ databaseChangeLog:
                       foreignKeyName: fk_game_categories_game_id  
                       nullable:  false  
                 - column:
-                    name: category_id
+                    name: categories_id
                     type: bigint
                     constraints:  
                       foreignKeyName: fk_game_categories_category_id  
