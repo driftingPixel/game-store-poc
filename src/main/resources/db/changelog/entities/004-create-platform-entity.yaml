@@ -30,5 +30,13 @@ databaseChangeLog:
                 - column:
                     name: slug
                     type: varchar(36)
-    
+                - column:
+                    name: created
+                    type: date
+                - column:
+                    name: last_update
+                    type: date
+                - column:
+                    name: url
+                    type: varchar(256)
               

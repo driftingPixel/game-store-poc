@@ -1,8 +1,8 @@
 databaseChangeLog:
-  - 
-    includeAll:
-        path: ./entities
-        relativeToChangelogFile: true
+  # - 
+  #   includeAll:
+  #       path: ./entities
+  #       relativeToChangelogFile: true
   -
     includeAll:
       path: ./data

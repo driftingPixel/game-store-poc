@@ -1,10 +1,10 @@
-`id`,`name`,`summary`,`slug`
-`1`,`Sandbox`,`Sandbox`,`sandbox`
-`2`,`Real-time strategy (RTS)`,`Real-time strategy (RTS)`,`real_time_strategy`
-`3`,`First Person Shooter`,`First Person Shooter`,`first_person_shooter`
-`4`,`Third Person Shooter`,`Third Person Shooter`,`third_person_shooter`
-`5`,`Multiplayer online battle arena`,`Multiplayer online battle arena`,`multiplayer_battle_arena`
-`6`,`Role-playing`,`Role-playing`,`rpg`
-`7`,`Simulation and sports`,`Simulation and sports`,`simulations_and_sports`
-`8`,`Puzzle`,`Puzzle`,`puzzle`
-`9`,`Action-adventure`,`Action-adventure`,`action_adventure`
+`id`,`name`,`summary`,`slug`,`created`,`last_update`
+`1`,`Sandbox`,`Sandbox`,`sandbox`,`1970-01-12 00:53:16.800`,`1970-01-16T00:25:56.438Z`
+`2`,`Real-time strategy (RTS)`,`Real-time strategy (RTS)`,`real_time_strategy`,`1970-01-12 00:53:16.800`,`2016-01-16T00:25:56.438Z`
+`3`,`First Person Shooter`,`First Person Shooter`,`first_person_shooter`,`1982-01-12 00:53:16.800`,`1989-01-16T00:25:56.438Z`
+`4`,`Third Person Shooter`,`Third Person Shooter`,`third_person_shooter`,`1982-01-12 00:53:16.800`,`1990-01-16T00:25:56.438Z`
+`5`,`Multiplayer online battle arena`,`Multiplayer online battle arena`,`multiplayer_battle_arena`,`1998-01-12 00:53:16.800`,`1970-01-16T00:25:56.438Z`
+`6`,`Role-playing`,`Role-playing`,`rpg`,`1993-01-12 00:53:16.800`,`1999-01-16T00:25:56.438Z`
+`7`,`Simulation and sports`,`Simulation and sports`,`simulations_and_sports`,`1970-01-12 00:53:16.800`,`1986-01-16T00:25:56.438Z`
+`8`,`Puzzle`,`Puzzle`,`puzzle`,`1999-01-12 00:53:16.800`,`2001-01-16T00:25:56.438Z`
+`9`,`Action-adventure`,`Action-adventure`,`action_adventure`,`2003-01-12 00:53:16.800`,`2003-01-16T00:25:56.438Z`

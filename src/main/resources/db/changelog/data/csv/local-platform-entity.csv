@@ -1,0 +1,32 @@
+`id`,`name`,`summary`,`slug`,`url`,`created`,`last_update`
+`1`,`Wii`,`undefined`,`wii`,`https://www.igdb.com/platforms/wii`,`2022-11-03T17:15:45.665`,`2022-11-03T17:15:45.665`
+`2`,`PC (Microsoft Windows)`,`undefined`,`win`,`https://www.igdb.com/platforms/win`,`2022-11-03T17:15:45.669`,`2022-11-03T17:15:45.669`
+`3`,`Linux`,`undefined`,`linux`,`https://www.igdb.com/platforms/linux`,`2022-11-03T17:15:45.671`,`2022-11-03T17:15:45.671`
+`4`,`Mac`,`undefined`,`mac`,`https://www.igdb.com/platforms/mac`,`2022-11-03T17:15:45.697`,`2022-11-03T17:15:45.697`
+`5`,`Xbox 360`,`undefined`,`xbox360`,`https://www.igdb.com/platforms/xbox360`,`2022-11-03T17:15:45.716`,`2022-11-03T17:15:45.716`
+`6`,`Nintendo DS`,`undefined`,`nds`,`https://www.igdb.com/platforms/nds`,`2022-11-03T17:15:45.719`,`2022-11-03T17:15:45.719`
+`7`,`Amstrad CPC`,`undefined`,`acpc`,`https://www.igdb.com/platforms/acpc`,`2022-11-03T17:15:45.750`,`2022-11-03T17:15:45.750`
+`8`,`PlayStation`,`undefined`,`ps`,`https://www.igdb.com/platforms/ps`,`2022-11-03T17:15:45.753`,`2022-11-03T17:15:45.753`
+`9`,`MSX`,`undefined`,`msx`,`https://www.igdb.com/platforms/msx`,`2022-11-03T17:15:45.755`,`2022-11-03T17:15:45.755`
+`10`,`Android`,`undefined`,`android`,`https://www.igdb.com/platforms/android`,`2022-11-03T17:15:45.759`,`2022-11-03T17:15:45.759`
+`11`,`Game Boy Color`,`undefined`,`gbc`,`https://www.igdb.com/platforms/gbc`,`2022-11-03T17:15:45.783`,`2022-11-03T17:15:45.783`
+`12`,`Dreamcast`,`undefined`,`dc`,`https://www.igdb.com/platforms/dc`,`2022-11-03T17:15:45.786`,`2022-11-03T17:15:45.786`
+`13`,`ZX Spectrum`,`undefined`,`zxs`,`https://www.igdb.com/platforms/zxs`,`2022-11-03T17:15:45.791`,`2022-11-03T17:15:45.791`
+`14`,`Nintendo GameCube`,`undefined`,`ngc`,`https://www.igdb.com/platforms/ngc`,`2022-11-03T17:15:45.795Z`,`2022-11-03T17:15:45.795Z`
+`15`,`Nintendo 64`,`undefined`,`n64`,`https://www.igdb.com/platforms/n64`,`2022-11-03T17:15:45.948`,`2022-11-03T17:15:45.948`
+`16`,`Amiga`,`undefined`,`amiga`,`https://www.igdb.com/platforms/amiga`,`2022-11-03T17:15:45.962Z`,`2022-11-03T17:15:45.962Z`
+`17`,`DOS`,`undefined`,`dos`,`https://www.igdb.com/platforms/dos`,`2022-11-03T17:15:45.964`,`2022-11-03T17:15:45.964`
+`18`,`PlayStation 2`,`undefined`,`ps2`,`https://www.igdb.com/platforms/ps2`,`2022-11-03T17:15:45.966`,`2022-11-03T17:15:45.966`
+`19`,`PlayStation 3`,`undefined`,`ps3`,`https://www.igdb.com/platforms/ps3`,`2022-11-03T17:15:45.968`,`2022-11-03T17:15:45.968`
+`20`,`Xbox`,`undefined`,`xbox`,`https://www.igdb.com/platforms/xbox`,`2022-11-03T17:15:45.979`,`2022-11-03T17:15:45.979`
+`21`,`Commodore C64/128/MAX`,`undefined`,`c64`,`https://www.igdb.com/platforms/c64`,`2022-11-03T17:15:45.988`,`2022-11-03T17:15:45.988`
+`22`,`Super Nintendo Entertainment System`,`undefined`,`snes`,`https://www.igdb.com/platforms/snes`,`2022-11-03T17:15:46.019`,`2022-11-03T17:15:46.019`
+`23`,`Game Boy Advance`,`undefined`,`gba`,`https://www.igdb.com/platforms/gba`,`2022-11-03T17:15:46.031`,`2022-11-03T17:15:46.031`
+`24`,`Sega Mega Drive/Genesis`,`undefined`,`smd`,`https://www.igdb.com/platforms/smd`,`2022-11-03T17:15:46.038`,`2022-11-03T17:15:46.038`
+`25`,`Sega 32X`,`undefined`,`sega32`,`https://www.igdb.com/platforms/sega32`,`2022-11-03T17:15:46.054`,`2022-11-03T17:15:46.054`
+`26`,`Game Boy`,`undefined`,`gb`,`https://www.igdb.com/platforms/gb`,`2022-11-03T17:15:46.057`,`2022-11-03T17:15:46.057`
+`27`,`iOS`,`undefined`,`ios`,`https://www.igdb.com/platforms/ios`,`2022-11-03T17:15:46.063`,`2022-11-03T17:15:46.063`
+`28`,`Sega Game Gear`,`undefined`,`gamegear`,`https://www.igdb.com/platforms/gamegear`,`2022-11-03T17:15:46.076`,`2022-11-03T17:15:46.076`
+`29`,`PlayStation Portable`,`undefined`,`psp`,`https://www.igdb.com/platforms/psp`,`2022-11-03T17:15:46.098`,`2022-11-03T17:15:46.098`
+`30`,`Nintendo 3DS`,`undefined`,`3ds`,`https://www.igdb.com/platforms/3ds`,`2022-11-03T17:15:46.109`,`2022-11-03T17:15:46.109`
+`31`,`Nintendo Entertainment System`,`undefined`,`nes`,`https://www.igdb.com/platforms/nes`,`2022-11-03T17:15:46.128`,`2022-11-03T17:15:46.128`
