@@ -7,6 +7,11 @@ import games.driftingpixel.gamestore.models.exceptions.WrongIdException;
 import games.driftingpixel.gamestore.repositories.RepositoryGame;
 import games.driftingpixel.gamestore.utility.comparators.ComparatorSortByIdDesc;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.data.web.SortDefault;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,11 +37,29 @@ public class ControllerGame {
 
   // Part for registered users / admins
 
+  /**
+   * Get all games sorted by id desc
+   * @return
+   */
   @GetMapping(ControllerGame.ENDPOINT_PREFIX)
   List<Game> all() {
     List<Game> result = repositoryGame.findAll();
     result.sort(new ComparatorSortByIdDesc());
     return result;
+  }
+
+  /**
+   * Get all games with pagination
+   * eg request: /games?page=3&size=10
+   * @param pageable
+   * @return
+   */
+  @GetMapping(params = { "page", "size" }, path=ControllerGame.ENDPOINT_PREFIX )
+  ResponseEntity<Page<Game>> getPageable(@SortDefault(sort = "id") @PageableDefault(size = 20) final Pageable pageable) {
+
+    Page<Game> result = repositoryGame.findAll(pageable);
+   
+    return ResponseEntity.ok(result);
   }
 
 

@@ -1,6 +1,5 @@
 package games.driftingpixel.gamestore.repositories;
 
-import java.util.List;
 import java.util.Optional;
 
 import games.driftingpixel.gamestore.models.db.Game;
