@@ -18,10 +18,10 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: update
-    # database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
   liquibase:
     change-log: classpath:db/changelog/changelog.yaml
-    enabled: true
+    enabled: false
     contexts: local
     parameters:
       data-file-prefix: local
