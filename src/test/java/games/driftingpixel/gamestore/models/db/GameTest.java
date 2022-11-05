@@ -45,9 +45,13 @@ public class GameTest {
 
     game1.copyFromGame(game2, false);
 
-    assertNull(game1.getGallery());
-    assertNull(game1.getIgbUrl());
-    assertNull(game1.getSlug());
+    assertNotNull(game1.getGallery());
+    assertNotNull(game1.getIgbUrl());
+    assertNotNull(game1.getSlug());
+    assertNotNull(game1.getPlatforms());
+    assertNotNull(game1.getCompanies());
+    assertNotNull(game1.getGallery());
+    assertNotNull(game1.getCreated());
 
     assertNotEquals(game1, game2);
 

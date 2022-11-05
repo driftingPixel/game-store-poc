@@ -56,8 +56,8 @@ public class Game extends BaseDbModel {
   private Gallery gallery;
   private String igbUrl;
 
-  public void copyFromGame(Game game, boolean copyId){
-    if(copyId){
+  public void copyFromGame(Game game, boolean shouldCopyId){
+    if(shouldCopyId){
       this.id = game.id;
     }
 
