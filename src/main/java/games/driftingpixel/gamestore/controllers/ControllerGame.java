@@ -38,8 +38,7 @@ public class ControllerGame {
   // Part for registered users / admins
 
   /**
-   * Get all games sorted by id desc
-   * @return
+   * @return all games sorted by id desc
    */
   @GetMapping(ControllerGame.ENDPOINT_PREFIX)
   List<Game> all() {
@@ -49,10 +48,9 @@ public class ControllerGame {
   }
 
   /**
-   * Get all games with pagination
    * eg request: /games?page=3&size=10
    * @param pageable
-   * @return
+   * @return all games with pagination
    */
   @GetMapping(params = { "page", "size" }, path=ControllerGame.ENDPOINT_PREFIX )
   ResponseEntity<Page<Game>> getPageable(@SortDefault(sort = "id") @PageableDefault(size = 20) final Pageable pageable) {
@@ -71,17 +69,15 @@ public class ControllerGame {
   @PutMapping(ControllerGame.ENDPOINT_PREFIX + "/{id}")
   Game replaceElement(@RequestBody Game newGame, @PathVariable Long id) {
     
-    // return repositoryGame.findById(id)
-    //   .map(employee -> {
-    //     employee.setName(newEmployee.getName());
-    //     employee.setRole(newEmployee.getRole());
-    //     return repository.save(employee);
-    //   })
-    //   .orElseGet(() -> {
-    //     newEmployee.setId(id);
-    //     return repository.save(newEmployee);
-    //   });
-    return newGame;
+    return repositoryGame.findById(id)
+        .map((game) -> { 
+          game.copyFromGame(newGame, false);
+          return repositoryGame.save(game);
+        })
+        .orElseGet(() -> {
+          newGame.setId(id);
+          return repositoryGame.save(newGame);
+        });
   }
 
   @DeleteMapping(ControllerGame.ENDPOINT_PREFIX + "/{id}")
