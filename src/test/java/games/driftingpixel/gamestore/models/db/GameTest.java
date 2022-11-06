@@ -7,6 +7,11 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.util.Date;
 
+import games.driftingpixel.gamestore.models.db.game.Category;
+import games.driftingpixel.gamestore.models.db.game.Company;
+import games.driftingpixel.gamestore.models.db.game.Gallery;
+import games.driftingpixel.gamestore.models.db.game.Game;
+import games.driftingpixel.gamestore.models.db.game.Platform;
 import org.junit.jupiter.api.Test;
 
 public class GameTest {
@@ -32,9 +37,9 @@ public class GameTest {
                   .firstReleaseDate(new Date())
                   .igbUrl("igbUrl")
                   .gallery(new Gallery())
-                  .categories(new Category())
-                  .platforms(new Platform())
-                  .companies(new Company())
+                  .category(new Category())
+                  .platform(new Platform())
+                  .company(new Company())
                   .build();
     
     assertNull(game1.getGallery());
@@ -48,8 +53,8 @@ public class GameTest {
     assertNotNull(game1.getGallery());
     assertNotNull(game1.getIgbUrl());
     assertNotNull(game1.getSlug());
-    assertNotNull(game1.getPlatforms());
-    assertNotNull(game1.getCompanies());
+    assertNotNull(game1.getPlatform());
+    assertNotNull(game1.getCompany());
     assertNotNull(game1.getGallery());
     assertNotNull(game1.getCreated());
 

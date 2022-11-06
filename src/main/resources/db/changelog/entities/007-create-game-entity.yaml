@@ -38,8 +38,29 @@ databaseChangeLog:
                     type: bigint
                     constraints:
                       nullable: true
-                      foreignKeyName: fk_abc_account
+                      foreignKeyName: fk_game_gallery
                       references: galleries(id)
+                - column:
+                    name: company
+                    type: bigint
+                    constraints:
+                      nullable: true
+                      foreignKeyName: fk_games_company
+                      references: companies(id)
+                - column:
+                    name: category
+                    type: bigint
+                    constraints:
+                      nullable: true
+                      foreignKeyName: fk_games_category
+                      references: categories(id)
+                - column:
+                    name: platform
+                    type: bigint
+                    constraints:
+                      nullable: true
+                      foreignKeyName: fk_games_platform
+                      references: platforms(id)
                 - column:
                     name: created
                     type: date

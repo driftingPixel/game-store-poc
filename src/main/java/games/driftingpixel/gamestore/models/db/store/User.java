@@ -1,4 +1,4 @@
-package games.driftingpixel.gamestore.models.db;
+package games.driftingpixel.gamestore.models.db.store;
 
 import java.util.Date;
 

@@ -2,14 +2,11 @@ package games.driftingpixel.gamestore.controllers;
 
 import java.util.List;
 
-import games.driftingpixel.gamestore.models.db.Game;
-import games.driftingpixel.gamestore.models.exceptions.WrongIdException;
-import games.driftingpixel.gamestore.repositories.RepositoryGame;
+import games.driftingpixel.gamestore.models.db.game.Game;
 import games.driftingpixel.gamestore.services.ServiceGame;
 import games.driftingpixel.gamestore.utility.comparators.ComparatorSortByIdDesc;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -62,7 +59,6 @@ public class ControllerGame {
   ResponseEntity<List<Game>> all() {
     log.info("Endpoint -> Get all games");
     List<Game> result = serviceGame.getAllGames();
-    result.sort(new ComparatorSortByIdDesc());
     return  ResponseEntity.ok(result);
   }
 

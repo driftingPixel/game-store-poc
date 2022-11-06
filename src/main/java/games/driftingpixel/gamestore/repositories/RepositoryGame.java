@@ -2,7 +2,7 @@ package games.driftingpixel.gamestore.repositories;
 
 import java.util.Optional;
 
-import games.driftingpixel.gamestore.models.db.Game;
+import games.driftingpixel.gamestore.models.db.game.Game;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

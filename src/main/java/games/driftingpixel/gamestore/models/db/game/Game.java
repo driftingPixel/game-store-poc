@@ -1,4 +1,4 @@
-package games.driftingpixel.gamestore.models.db;
+package games.driftingpixel.gamestore.models.db.game;
 
 import java.util.Date;
 
@@ -7,6 +7,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import games.driftingpixel.gamestore.models.db.BaseDbModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,33 +24,35 @@ import lombok.NoArgsConstructor;
 public class Game extends BaseDbModel {
 
   @Builder
-  public Game(Long id, String name, String summary, String slug, Date created, Date lastUpdate, Category categories, Platform platforms, Date firstReleaseDate, Company companies, Gallery gallery, String igbUrl){
+  public Game(Long id, String name, String summary, String slug, 
+              Date created, Date lastUpdate, Category category, Platform platform, 
+              Date firstReleaseDate, Company company, Gallery gallery, String igbUrl){
     super(id ,name, summary, slug, created, lastUpdate);
-    this.categories = categories;
-    this.platforms = platforms;
+    this.category = category;
+    this.platform = platform;
     this.firstReleaseDate = firstReleaseDate;
-    this.companies = companies;
+    this.company = company;
     this.gallery = gallery;
     this.igbUrl = igbUrl;
   }
 
 
   @ManyToOne
-  private Category categories;
+  private Category category;
 
   /**
-   * List of platforms, where game is available
+   * Platform, where game is available
    */
   @ManyToOne
-  private Platform platforms;
+  private Platform platform;
 
   private Date firstReleaseDate;
 
   /**
-   * List of companies involved to game release
+   * Company involved to game release
    */
   @ManyToOne
-  private Company companies;
+  private Company company;
 
   @OneToOne
   private Gallery gallery;
@@ -65,10 +68,10 @@ public class Game extends BaseDbModel {
     this.slug = game.slug;
     this.created = game.created;
     this.lastUpdate = game.lastUpdate;
-    this.categories = game.categories;
-    this.platforms = game.platforms;
+    this.category = game.category;
+    this.platform = game.platform;
     this.firstReleaseDate = game.firstReleaseDate;
-    this.companies = game.companies;
+    this.company = game.company;
     this.gallery = game.gallery;
     this.igbUrl = game.igbUrl;
   }

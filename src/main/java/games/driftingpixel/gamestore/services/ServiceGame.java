@@ -2,7 +2,7 @@ package games.driftingpixel.gamestore.services;
 
 import java.util.List;
 
-import games.driftingpixel.gamestore.models.db.Game;
+import games.driftingpixel.gamestore.models.db.game.Game;
 import games.driftingpixel.gamestore.models.exceptions.WrongIdException;
 import games.driftingpixel.gamestore.repositories.RepositoryGame;
 import games.driftingpixel.gamestore.utility.comparators.ComparatorSortByIdDesc;
@@ -83,7 +83,7 @@ public class ServiceGame {
   }
 
   /***
-   * Dalete game from db
+   * Delete game from db
    * @param id
    */
   public void deleteGame(Long id) {

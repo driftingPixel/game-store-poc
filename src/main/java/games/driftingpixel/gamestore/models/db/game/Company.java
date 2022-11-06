@@ -1,10 +1,11 @@
-package games.driftingpixel.gamestore.models.db;
+package games.driftingpixel.gamestore.models.db.game;
 
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import games.driftingpixel.gamestore.models.db.BaseDbModel;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,12 +14,16 @@ import lombok.NoArgsConstructor;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@Table(name = "Categories")
+@Table(name = "Companies")
 @NoArgsConstructor
-public class Category extends BaseDbModel {
+public class Company extends BaseDbModel {
+
+  private String url;
 
   @Builder
-  public Category(Long id, String name, String summary, String slug, Date created, Date lastUpdate){
+  public Company(Long id, String name, String summary, String slug, Date created, Date lastUpdate, String url){
     super(id, name, summary, slug, created, lastUpdate);
+    this.url = url;
   }
+  
 }

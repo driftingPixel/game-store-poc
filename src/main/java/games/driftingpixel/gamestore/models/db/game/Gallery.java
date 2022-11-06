@@ -1,4 +1,4 @@
-package games.driftingpixel.gamestore.models.db;
+package games.driftingpixel.gamestore.models.db.game;
 
 import java.util.List;
 
