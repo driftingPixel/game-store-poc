@@ -26,17 +26,17 @@ public class GameTest {
                   .id(3l)
                   .name("name2")
                   .summary("summary2")
+                  .slug("Slug")
                   .created(new Date())
                   .lastUpdate(new Date())
                   .firstReleaseDate(new Date())
-                  .slug("slug")
                   .igbUrl("igbUrl")
                   .gallery(new Gallery())
                   .categories(new Category())
                   .platforms(new Platform())
                   .companies(new Company())
                   .build();
-
+    
     assertNull(game1.getGallery());
     assertNull(game1.getIgbUrl());
     assertNull(game1.getSlug());

@@ -18,7 +18,6 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "games")
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Game extends BaseDbModel {

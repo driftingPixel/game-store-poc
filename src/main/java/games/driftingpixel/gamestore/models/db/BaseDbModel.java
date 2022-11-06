@@ -17,9 +17,17 @@ import lombok.NoArgsConstructor;
 @MappedSuperclass
 @Inheritance(strategy= InheritanceType.TABLE_PER_CLASS)
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class BaseDbModel {
+
+  public BaseDbModel(Long id, String name, String summary, String slug, Date created, Date lastUpdate){
+    this.id = id;
+    this.name = name;
+    this.summary = summary;
+    this.slug = slug;
+    this.created = created;
+    this.lastUpdate = lastUpdate;
+  }
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)

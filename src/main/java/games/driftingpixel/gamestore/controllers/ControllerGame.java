@@ -7,6 +7,8 @@ import games.driftingpixel.gamestore.models.exceptions.WrongIdException;
 import games.driftingpixel.gamestore.repositories.RepositoryGame;
 import games.driftingpixel.gamestore.utility.comparators.ComparatorSortByIdDesc;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -22,6 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @AllArgsConstructor
+@Slf4j
 public class ControllerGame {
 
   private static final String ENDPOINT_PREFIX = "/games";
@@ -32,6 +35,7 @@ public class ControllerGame {
 
   @GetMapping(ControllerGame.ENDPOINT_PREFIX + "/{id}")
   Game one(@PathVariable Long id) {
+    log.info("Endpoint -> Game by id: {}", id);
     return repositoryGame.findById(id).orElseThrow(() -> new WrongIdException());
   }
 
@@ -42,6 +46,7 @@ public class ControllerGame {
    */
   @GetMapping(ControllerGame.ENDPOINT_PREFIX)
   List<Game> all() {
+    log.info("Endpoint -> Get all games");
     List<Game> result = repositoryGame.findAll();
     result.sort(new ComparatorSortByIdDesc());
     return result;
@@ -54,7 +59,7 @@ public class ControllerGame {
    */
   @GetMapping(params = { "page", "size" }, path=ControllerGame.ENDPOINT_PREFIX )
   ResponseEntity<Page<Game>> getPageable(@SortDefault(sort = "id") @PageableDefault(size = 20) final Pageable pageable) {
-
+    log.info("Endpoint -> Games by page: {}", pageable);
     Page<Game> result = repositoryGame.findAll(pageable);
    
     return ResponseEntity.ok(result);
@@ -63,12 +68,13 @@ public class ControllerGame {
 
   @PostMapping(ControllerGame.ENDPOINT_PREFIX)
   Game newElement(@RequestBody Game newGame) {
+    log.info("Endpoint -> Add new game: {}", newGame);
     return repositoryGame.save(newGame);
   }
 
   @PutMapping(ControllerGame.ENDPOINT_PREFIX + "/{id}")
   Game replaceElement(@RequestBody Game newGame, @PathVariable Long id) {
-    
+    log.info("Endpoint -> Update game: id {}, newGame {}", id, newGame);
     return repositoryGame.findById(id)
         .map((game) -> { 
           game.copyFromGame(newGame, false);
@@ -82,6 +88,7 @@ public class ControllerGame {
 
   @DeleteMapping(ControllerGame.ENDPOINT_PREFIX + "/{id}")
   void deleteEmployee(@PathVariable Long id) {
+    log.info("Endpoint -> Delete game by id: {}", id);
     repositoryGame.deleteById(id);
   }
   
