@@ -64,3 +64,7 @@ User     : string login
 User     : string passwordHash
 User     : Date created
 ```
+
+## Redis
+
+Redis should be a cache layer for get responses to improve performance and make responses faster.

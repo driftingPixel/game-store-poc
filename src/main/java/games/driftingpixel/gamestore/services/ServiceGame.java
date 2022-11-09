@@ -91,4 +91,8 @@ public class ServiceGame {
     repositoryGame.deleteById(id);
   }
   
+
+  public List<Game> getManyGamesByIds(List<Long> gameIds){
+    return repositoryGame.findAllById(gameIds);
+  }
 }
