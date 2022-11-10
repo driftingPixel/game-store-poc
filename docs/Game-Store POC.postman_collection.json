@@ -1,0 +1,277 @@
+{
+	"info": {
+		"_postman_id": "2430e0a8-c304-481b-abf8-b18e77ed4c74",
+		"name": "Game-Store POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Games",
+			"item": [
+				{
+					"name": "All Games",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/games",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Games with pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/games?page=1&size=10",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Game by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/games/30",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"30"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Game by Id - Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/games/29",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"games",
+										"29"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Nov 2022 14:41:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"NOT_FOUND\",\n    \"timestamp\": \"04-11-2022 03:41:40\",\n    \"message\": \"Element with request id, does not exist\",\n    \"debugMessage\": \"Element with request id, does not exist\",\n    \"subErrors\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Update game by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 30,\n    \"name\": \"Space Quest III: The Pirates Of Pestulon + 2\",\n    \"summary\": \"Have you seen 2 Guys From Andromeda? Software Authors Pirated?\\n\\nThe Two Guys from Andromeda, designers of the graphically extravagant (and satirically sensational) Space Quest series, have disappeared into this oxygen! Hysterical game fanatics around the world await word on the whereabouts of these celestial celebrities!\\n\\nWho could be the mastermind behind this evil plot?\\n\\nCould it be the Pirates of Pestulon, known for their plundering, preying and unprincipled practices? Or maybe the legions of Space Quest fans who would kill to be the first to play Space Quest III (the graphic adventure game with the closest thing yet to motion picture-quality animation). Not to be forgotten are the monkey-suited minions of Sludge Vohaul (from our last episode), who would love to make banana pudding out of those responsible for putting them behind bars.\\n\\nWho are the dirty deed doers behind our daring duo's demise? Is it too late to save the two guys from a disgusting and downright despicable doom?\\n\\nHoly SpaceWaste, space adventurers, find out for yourself as Roger Wilco, intergalactic garbagemen, returns to the rescue!\",\n    \"slug\": \"space-quest-iii-the-pirates-of-pestulon\",\n    \"created\": \"1970-01-15T23:28:09.158+00:00\",\n    \"lastUpdate\": \"1970-01-20T03:38:01.864+00:00\",\n    \"categories\": {\n        \"id\": 6,\n        \"name\": \"Role-playing\",\n        \"summary\": \"Role-playing\",\n        \"slug\": \"rpg\",\n        \"created\": \"1993-01-11T23:53:16.800+00:00\",\n        \"lastUpdate\": \"1999-01-15T23:25:56.438+00:00\"\n    },\n    \"platforms\": {\n        \"id\": 4,\n        \"name\": \"Mac\",\n        \"summary\": \"undefined\",\n        \"slug\": \"mac\",\n        \"created\": \"2022-11-03T16:15:45.697+00:00\",\n        \"lastUpdate\": \"2022-11-03T16:15:45.697+00:00\",\n        \"url\": \"https://www.igdb.com/platforms/mac\"\n    },\n    \"firstReleaseDate\": \"1970-01-08T06:17:45.600+00:00\",\n    \"companies\": {\n        \"id\": 6,\n        \"name\": \"Visceral Games\",\n        \"summary\": \"Formerly known as EA Redwood Shores. \\n \\nAfter the success of Dead Space, the studio was able to move from an internal development studio of EA Games to a separate subsidiary with a focus on third-person action games. \\n \\nAlong with the studio's name change two branch studios were created by EA, Visceral Montreal alongside EA Montreal and Visceral Melbourne. \\n \\nVisceral Melbourne closed in September 2011. \\nVisceral Montreal closed in February 2013. \\nVisceral Games closed in October 2017.\",\n        \"slug\": \"visceral-games\",\n        \"created\": \"1970-01-14T20:48:57.600+00:00\",\n        \"lastUpdate\": \"1970-01-16T00:08:16.592+00:00\",\n        \"url\": \" `https://www.igdb.com/companies/visceral-games`\"\n    },\n    \"gallery\": null,\n    \"igbUrl\": \" `https://www.igdb.com/games/space-quest-iii-the-pirates-of-pestulon`\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/games/30",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new game",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Space Quest III: The Pirates Of Pestulon + 3\",\n    \"summary\": \"Have you seen 2 Guys From Andromeda? Software Authors Pirated?\\n\\nThe Two Guys from Andromeda, designers of the graphically extravagant (and satirically sensational) Space Quest series, have disappeared into this oxygen! Hysterical game fanatics around the world await word on the whereabouts of these celestial celebrities!\\n\\nWho could be the mastermind behind this evil plot?\\n\\nCould it be the Pirates of Pestulon, known for their plundering, preying and unprincipled practices? Or maybe the legions of Space Quest fans who would kill to be the first to play Space Quest III (the graphic adventure game with the closest thing yet to motion picture-quality animation). Not to be forgotten are the monkey-suited minions of Sludge Vohaul (from our last episode), who would love to make banana pudding out of those responsible for putting them behind bars.\\n\\nWho are the dirty deed doers behind our daring duo's demise? Is it too late to save the two guys from a disgusting and downright despicable doom?\\n\\nHoly SpaceWaste, space adventurers, find out for yourself as Roger Wilco, intergalactic garbagemen, returns to the rescue!\",\n    \"slug\": \"space-quest-iii-the-pirates-of-pestulon\",\n    \"created\": \"1970-01-15T23:28:09.158+00:00\",\n    \"lastUpdate\": \"1970-01-20T03:38:01.864+00:00\",\n    \"categories\": {\n        \"id\": 6,\n        \"name\": \"Role-playing\",\n        \"summary\": \"Role-playing\",\n        \"slug\": \"rpg\",\n        \"created\": \"1993-01-11T23:53:16.800+00:00\",\n        \"lastUpdate\": \"1999-01-15T23:25:56.438+00:00\"\n    },\n    \"platforms\": {\n        \"id\": 4,\n        \"name\": \"Mac\",\n        \"summary\": \"undefined\",\n        \"slug\": \"mac\",\n        \"created\": \"2022-11-03T16:15:45.697+00:00\",\n        \"lastUpdate\": \"2022-11-03T16:15:45.697+00:00\",\n        \"url\": \"https://www.igdb.com/platforms/mac\"\n    },\n    \"firstReleaseDate\": \"1970-01-08T06:17:45.600+00:00\",\n    \"companies\": {\n        \"id\": 6,\n        \"name\": \"Visceral Games\",\n        \"summary\": \"Formerly known as EA Redwood Shores. \\n \\nAfter the success of Dead Space, the studio was able to move from an internal development studio of EA Games to a separate subsidiary with a focus on third-person action games. \\n \\nAlong with the studio's name change two branch studios were created by EA, Visceral Montreal alongside EA Montreal and Visceral Melbourne. \\n \\nVisceral Melbourne closed in September 2011. \\nVisceral Montreal closed in February 2013. \\nVisceral Games closed in October 2017.\",\n        \"slug\": \"visceral-games\",\n        \"created\": \"1970-01-14T20:48:57.600+00:00\",\n        \"lastUpdate\": \"1970-01-16T00:08:16.592+00:00\",\n        \"url\": \" `https://www.igdb.com/companies/visceral-games`\"\n    },\n    \"gallery\": null,\n    \"igbUrl\": \" `https://www.igdb.com/games/space-quest-iii-the-pirates-of-pestulon`\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/games",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"games"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Order by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/orders/12",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/orders",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Orders with pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/orders?page=1&size=10",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:8080",
+			"type": "default"
+		}
+	]
+}

@@ -79,6 +79,8 @@ Proposed tools and libraries:
 + [**Actuator**](https://www.baeldung.com/spring-boot-actuators) - for monitoring endpoints
 + [**Project Lombok**](https://github.com/projectlombok/lombok/wiki) - for code readability
 
+Testing process can be improve by postman collection attached in doc folder: **Game-Store POC.postman_collection.json**
+
 ### Frontend
 
 ---
